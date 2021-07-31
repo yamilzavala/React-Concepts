@@ -14,7 +14,7 @@ export function AppUseMemo() {
     
     return(
         <div>
-            <h6>Check that the lasgestNumber render when is necesary.. not for each increment in the '+'</h6>
+            <h6>Check that the largestNumber render when is necesary.. not for each increment in the '+'</h6>
             <button onClick={() => setLocalValue(localValue +1)}> + </button>
             {localValue}
             <h6>Largest number: {onlyExecutedWhenChange}</h6>
