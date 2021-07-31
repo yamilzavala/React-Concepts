@@ -20,7 +20,7 @@ export function AppHigherOrderComponet (props) {
 
     return(
         <div style={style}>
-            <h6> Hi, i'm a component with new functionality (added with Higher Order Componet)</h6>
+            <h6> Hi, i'm a component with new functionality (added with Higher Order Component)</h6>
         </div>
     )
 }

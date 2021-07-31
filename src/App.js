@@ -7,11 +7,13 @@ import LiftStateUp from './components/lift-state-up'
 import ControlledVsUncontrolled from './components/controlled-vs-uncontrolled'
 import RefComponent from './components/ref'
 import KeysComponentTwo from './components/keys2';
-import {addNewBehaviour, AppHigherOrderComponet} from './components/higher-order component'
+import {addNewBehaviour, AppHigherOrderComponet} from './components/hoc-function';
+import {AppHigherOrderComponetTwo} from './components/hoc-anotherComponent';
+
 
 
 function App() {
-  const HigherOrderComponet = addNewBehaviour(AppHigherOrderComponet);
+  // const HigherOrderComponet = addNewBehaviour(AppHigherOrderComponet);
   return (
     <div className="App">
       {/* <KeysComponent/> */}
@@ -21,7 +23,8 @@ function App() {
       {/* <ControlledVsUncontrolled/> */}
       {/* <RefComponent/> */}
       {/* <KeysComponentTwo/> */}
-     <HigherOrderComponet/>
+      {/* <HigherOrderComponet/> */}
+      <AppHigherOrderComponetTwo/>
     </div>
   );
 }
