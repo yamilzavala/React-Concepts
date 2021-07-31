@@ -14,8 +14,7 @@ import {AppUseEffect} from './components/useEffect';
 import {AppUseSpecificValue} from './components/useEffectSpecificValue';
 import {AppMemo} from './components/memo';
 import {AppUseCallback} from './components/useCallback';
-
-
+import {AppUseMemo} from './components/useMemo';
 
 function App() {
   // const HigherOrderComponet = addNewBehaviour(AppHigherOrderComponet);
@@ -32,7 +31,8 @@ function App() {
       {/* <AppRender/> */}
       {/* <AppCustomHook /> */}
       {/* <AppMemo/> */}
-      <AppUseCallback/>
+      {/* <AppUseCallback/> */}
+      <AppUseMemo/>
     </div>
   );
 }

@@ -6,7 +6,7 @@ const Child = memo(  (params) => {
 })
 
 export function AppUseCallback() {
-    const [locaValue, setLocalValue] = useState(0);
+    const [localValue, setLocalValue] = useState(0);
 
     const someFunction = () => {};
     const onlyExecutedWhenChange = useCallback(someFunction, []);
@@ -14,8 +14,8 @@ export function AppUseCallback() {
     return(
         <div>
             <Child func={onlyExecutedWhenChange}/>
-            <button onClick={() => setLocalValue(locaValue +1)}> + </button>
-            {locaValue}
+            <button onClick={() => setLocalValue(localValue +1)}> + </button>
+            {localValue}
         </div>
     )
 }
