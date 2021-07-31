@@ -11,7 +11,7 @@ import {addNewBehaviour, AppHigherOrderComponet} from './components/hoc-function
 import {AppRender} from './components/render';
 import {AppCustomHook} from './components/custom-hook';
 import {AppUseEffect} from './components/useEffect';
-
+import {AppUseSpecificValue} from './components/useEffectSpecificValue';
 
 function App() {
   // const HigherOrderComponet = addNewBehaviour(AppHigherOrderComponet);
@@ -27,7 +27,7 @@ function App() {
       {/* <HigherOrderComponet/> */}
       {/* <AppRender/> */}
       {/* <AppCustomHook /> */}
-      <AppUseEffect/>
+      <AppUseSpecificValue/>
     </div>
   );
 }
