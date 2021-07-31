@@ -17,7 +17,7 @@ export function AppRender (props) {
         }
         return(
             <div style={style}>
-                <h6> Hi, i'm a component with new functionality (added with Higher Order Component)</h6>
+                <h6> Hi, i'm a component with new functionality (added with render logic)</h6>
             </div>
         )
     }

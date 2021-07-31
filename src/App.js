@@ -9,7 +9,8 @@ import RefComponent from './components/ref'
 import KeysComponentTwo from './components/keys2';
 import {addNewBehaviour, AppHigherOrderComponet} from './components/hoc-function';
 import {AppRender} from './components/render';
-
+import {AppCustomHook} from './components/custom-hook';
+import {AppUseEffect} from './components/useEffect';
 
 
 function App() {
@@ -24,7 +25,9 @@ function App() {
       {/* <RefComponent/> */}
       {/* <KeysComponentTwo/> */}
       {/* <HigherOrderComponet/> */}
-      <AppRender/>
+      {/* <AppRender/> */}
+      {/* <AppCustomHook /> */}
+      <AppUseEffect/>
     </div>
   );
 }
