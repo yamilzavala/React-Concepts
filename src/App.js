@@ -12,6 +12,10 @@ import {AppRender} from './components/render';
 import {AppCustomHook} from './components/custom-hook';
 import {AppUseEffect} from './components/useEffect';
 import {AppUseSpecificValue} from './components/useEffectSpecificValue';
+import {AppMemo} from './components/memo';
+import {AppUseCallback} from './components/useCallback';
+
+
 
 function App() {
   // const HigherOrderComponet = addNewBehaviour(AppHigherOrderComponet);
@@ -27,7 +31,8 @@ function App() {
       {/* <HigherOrderComponet/> */}
       {/* <AppRender/> */}
       {/* <AppCustomHook /> */}
-      <AppUseSpecificValue/>
+      {/* <AppMemo/> */}
+      <AppUseCallback/>
     </div>
   );
 }
