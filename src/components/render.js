@@ -1,17 +1,17 @@
 import {useState} from 'react';
 
-export function AddNewBehaviourTwo(props) {   
+export function DetectHover(props) {   
     const [hovered, setHover] = useState(false);
     return(
         <div onMouseOver={() => setHover(true)}
              onMouseLeave={() => setHover(false)}>
-             { props.hovered(hovered) }
+             { props.render(hovered) }
         </div>
     )    
 }
 
-export function AppHigherOrderComponetTwo (props) {   
-    function hovered(hovered) {
+export function AppRender (props) {   
+    function renderF(hovered) {
         const style = {
             backgroundColor: hovered ? "red" : ""
         }
@@ -22,8 +22,8 @@ export function AppHigherOrderComponetTwo (props) {
         )
     }
 
-    return <AddNewBehaviourTwo hovered={hovered} />
+    return <DetectHover render={renderF} />
     
 }
 
-export default AppHigherOrderComponetTwo;
+export default AppRender;

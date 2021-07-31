@@ -8,7 +8,7 @@ import ControlledVsUncontrolled from './components/controlled-vs-uncontrolled'
 import RefComponent from './components/ref'
 import KeysComponentTwo from './components/keys2';
 import {addNewBehaviour, AppHigherOrderComponet} from './components/hoc-function';
-import {AppHigherOrderComponetTwo} from './components/hoc-anotherComponent';
+import {AppRender} from './components/render';
 
 
 
@@ -24,7 +24,7 @@ function App() {
       {/* <RefComponent/> */}
       {/* <KeysComponentTwo/> */}
       {/* <HigherOrderComponet/> */}
-      <AppHigherOrderComponetTwo/>
+      <AppRender/>
     </div>
   );
 }
